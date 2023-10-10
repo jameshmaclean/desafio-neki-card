@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
-export const Container = styled.div`
-  width: 50%;
-  margin: 0 auto;
+export const Container = styled.View`
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1%;
+  background-color: ${(props) => props.theme['gray-900']};
+
   `

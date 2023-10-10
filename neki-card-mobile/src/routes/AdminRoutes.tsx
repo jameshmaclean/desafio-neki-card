@@ -18,7 +18,7 @@ export function AdminRoutes() {
     <Navigator screenOptions={{ headerShown: false }}>
       <Screen name="home" component={Home} />
       <Screen name="edit" component={Edit} />
-      {/* <Screen name="collaborator" component={Collaborator} /> */}
+      <Screen name="collaborator" component={Collaborator} />
       <Screen name="newCollaborator" component={Register} />
     </Navigator>
   );

@@ -11,7 +11,7 @@ import { api } from "../../services/api";
 import { format, parse } from "date-fns";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { userDTO } from "../Home/Home";
+import { userDTO } from "../Home";
 
 type FormDataProps = {
   email: string;
@@ -165,7 +165,7 @@ export function EditCollaborator() {
   return (
     <Container>
       <AppHeader />
-      <h1>Cadastrar novo colaborador</h1>
+      <h1>Editar colaborador</h1>
       <InputContainer>
         <Form onSubmit={handleSubmit(editUserDetails)}>
           <Controller

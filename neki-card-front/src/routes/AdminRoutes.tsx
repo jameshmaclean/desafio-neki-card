@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Register } from "../pages/Register";
-import { Home } from "../pages/Home/Home";
+import { Home } from "../pages/Home";
 import { EditCollaborator } from "../pages/Edit";
 import { Collaborator } from "../pages/Collaborator";
 

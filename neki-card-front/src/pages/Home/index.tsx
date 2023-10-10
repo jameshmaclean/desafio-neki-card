@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { AppCard } from "../../components/AppCard/AppCard";
+import { AppCard } from "../../components/AppCard";
 import { AppHeader } from "../../components/AppHeader";
 import { AuthContext } from "../../contexts/authContext";
 import { Container, ContentContainer, NavBar } from "./styles";

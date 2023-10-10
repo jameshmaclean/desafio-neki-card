@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { AppCard } from "../../components/AppCard/AppCard";
+import { AppCard } from "../../components/AppCard";
 import { api } from "../../services/api";
-import { userDTO } from "../Home/Home";
+import { userDTO } from "../Home";
 import { Container } from "./styles";
 
 export function Collaborator() {

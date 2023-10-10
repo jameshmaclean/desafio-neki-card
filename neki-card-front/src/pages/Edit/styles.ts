@@ -15,7 +15,7 @@ export const Container = styled.div`
   border-radius: 5px;
     & h1{
     font-weight: 900;
-    color: ${(props) => props.theme["green-700"]};
+    color: ${(props) => props.theme["green-500"]};
   }
 `
 export const Form = styled.form`

@@ -21,7 +21,7 @@ import { userDTO } from "../../pages/Home";
 
 type AppCardProps = {
   user: userDTO;
-  handleDelete: (id: string) => Promise<void>;
+  handleDelete?: (id: string) => Promise<void>;
 };
 
 export function AppCard({ user, handleDelete }: AppCardProps) {
@@ -43,6 +43,9 @@ export function AppCard({ user, handleDelete }: AppCardProps) {
       await handleDelete(id);
     }
   }
+  function handleNavigateUser(collaboratorId: string) {
+    navigate.navigate("collaborator", { collaboratorId });
+  }
 
   return (
     <>
@@ -62,6 +65,12 @@ export function AppCard({ user, handleDelete }: AppCardProps) {
                 size={15}
                 color={theme["red-500"]}
                 onPress={() => handleDeleteCollaborator(user.id)}
+              />
+              <Ionicons
+                name="eye"
+                size={15}
+                color={theme["white"]}
+                onPress={() => handleNavigateUser(user.id)}
               />
             </IconContainer>
           )}

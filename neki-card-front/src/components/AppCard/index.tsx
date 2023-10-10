@@ -23,7 +23,7 @@ import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/authContext";
-import { AppCardProps } from "./AppCard";
+import { AppCardProps } from ".";
 
 export function AppCard({ user, handleDelete }: AppCardProps) {
   const authenticatedUser = useContext(AuthContext);

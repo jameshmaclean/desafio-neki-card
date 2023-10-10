@@ -21,7 +21,7 @@ export const NavBar = styled.ul`
   gap: 2rem;
   color: ${(props) => props.theme["green-500"]};
   font-weight: 900;
-  font-size: 0.5rem;
+  font-size: 1rem;
 
   & li{
     cursor: pointer;
